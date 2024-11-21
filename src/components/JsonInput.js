@@ -11,7 +11,7 @@ const JsonInput = ({ setResponse }) => {
       const parsedInput = JSON.parse(jsonInput);
 
       // Send to backend
-      const response = await axios.post("http://localhost:3000/bfhl", {
+      const response = await axios.post("https://bajaj-18jm.onrender.com/bfhl", {
         data: parsedInput.data,
         file_b64: parsedInput.file_b64 || null,
       });
